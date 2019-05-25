@@ -2,9 +2,12 @@
 
 The goal of this dockerfile is to provide a minimal environment to develop your own rails applications on top of.
 
-To use please create your own Dockerfile and use ```FROM mdrewt/rails:latest```. Then copy your rails app into the working directory, CD into that app, bundle install, and use ```CMD [ "bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3000" ]``` to start the server. port 3000 has already been exposed.
+To use, create your own Dockerfile and use ```FROM mdrewt/rails:latest```. Then copy your rails app into the working directory, CD into that app, bundle install, and use ```CMD [ "bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3000" ]``` to start the server. Port 3000 has already been exposed.
 
-### Release 1.0
+### Release Notes v1.0.1
+Added build-essential library and libpq-dev library for postgres database support.
+
+### Release Notes v1.0.0
 Linux Distro: Debian
 
 JS Runtime: NodeJS
